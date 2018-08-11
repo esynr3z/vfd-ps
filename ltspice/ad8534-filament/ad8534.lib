@@ -1,0 +1,90 @@
+* AD8534 SPICE Macro-model             
+* Description: Amplifier
+* Generic Desc: Quad CMOS rail-rail low cost op amp
+* Developed by: ARG/TAM ADSC
+* Revision History: 08/10/2012 - Updated to new header style
+* 1.0 (07/1997)
+* Copyright 1996, 1997, 2012 by Analog Devices
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model 
+* indicates your acceptance of the terms and provisions in the License Statement.
+*
+* BEGIN Notes:
+*
+* Not Modeled:
+*    
+* Parameters modeled include: 
+*
+* END Notes
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT AD8534   1  2  99 50 40
+*
+* INPUT STAGE
+*
+m1 3 2 6 50 nix l=6u w=25u
+m2 4 7 6 50 nix l=6u w=25u
+m3 8 2 5 5 pix l=6u w=25u
+m4 9 7 5 5 pix l=6u w=25u
+eos 7 1 poly(1) 25 98 5e-3 0.451
+iin1 1 98 5p
+iin2 2 98 5p
+ios 2 1 0.5p
+i1 99 5 50u
+i2 6 50 50u
+r1 99 3 4.833k
+r2 99 4 4.833k
+r3 8 50 4.833k
+r4 9 50 4.833k
+d3 5 99 dx
+d4 50 6 dx
+*
+* GAIN STAGE
+*
+eref 98 0 poly(2) 99 0 50 0 0 0.5 0.5
+g1 98 21 poly(2) 4 3 9 8 0 145u 145u
+rg 21 98 18.078e6
+cc 21 40 14p
+d1 21 22 dx
+d2 23 21 dx
+v1 99 22 1.37
+v2 23 50 1.37
+*
+* COMMON MODE GAIN STAGE
+*
+ecm 24 98 poly(2) 1 98 2 98 0 0.5 0.5
+r5 24 25 1e6
+r6 25 98 10k
+c1 24 25 0.75p
+*
+* OUTPUT STAGE
+*
+isy 99 50 450.4u
+gsy 99 50 poly(1) 99 50 -3.334e-4 6.667e-5
+ep 99 39 poly(1) 98 21 0.78925 1
+en 38 50 poly(1) 21 98 0.78925 1
+m15 40 39 99 99 pox l=1.5u w=1500u
+m16 40 38 50 50 nox l=1.5u w=1500u
+c15 40 39 50p
+c16 40 38 50p
+.model dx d(rs=1 cjo=0.1p)
+.model nix nmos(vto=0.75 kp=205.5u rd=1 rs=1 rg=1 rb=1 cgso=4e-9
++cgdo=4e-9 cgbo=16.667e-9 cbs=2.34e-13 cbd=2.34e-13)
+.model nox nmos(vto=0.75 kp=195u rd=.5 rs=.5 rg=1 rb=1 cgso=66.667e-12
++cgdo=66.667e-12 cgbo=125e-9 cbs=2.34e-13 cbd=2.34e-13)
+.model pix pmos(vto=-0.75 kp=205.5u rd=1 rs=1 rg=1 rb=1 cgso=4e-9
++cgdo=4e-9 cgbo=16.667e-9 cbs=2.34e-13 cbd=2.34e-13)
+.model pox pmos(vto=-0.75 kp=195u rd=.5 rs=.5 rg=1 rb=1 cgso=66.667e-12
++cgdo=66.667e-12 cgbo=125e-9 cbs=2.34e-13 cbd=2.34e-13)
+.ends AD8534
+
+
+
+
+
