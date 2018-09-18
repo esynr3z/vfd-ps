@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0aa7de89-0e44-4dbb-804c-4a91ae92f9f2</id>
-      <revision>33</revision>
+      <revision>34</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -1271,11 +1271,11 @@
       </result>
     </math>
   </region>
-  <region id="82" left="333" top="2664" width="140" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="82" left="333" top="2664" width="124" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
     <math>
       <input>
         <e type="operand">Cpole</e>
-        <e type="operand">1.2</e>
+        <e type="operand">1</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1285,12 +1285,12 @@
       </input>
     </math>
   </region>
-  <region id="83" left="0" top="2700" width="155" height="31" border="true" color="#000000" bgColor="#ffffff" fontSize="14">
+  <region id="83" left="0" top="2691" width="155" height="31" border="true" color="#000000" bgColor="#ffffff" fontSize="14">
     <text lang="rus">
       <p fontName="Arial">Input capacitors</p>
     </text>
   </region>
-  <region id="84" left="0" top="2736" width="100" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="84" left="0" top="2727" width="100" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
     <math>
       <input>
         <e type="operand">Cd</e>
@@ -1304,12 +1304,12 @@
       </input>
     </math>
   </region>
-  <region id="85" left="99" top="2745" width="123" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="85" left="99" top="2736" width="123" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="rus">
       <p>//ceramic 50V </p>
     </text>
   </region>
-  <region id="86" left="0" top="2772" width="140" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="86" left="0" top="2763" width="140" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
     <math>
       <input>
         <e type="operand">Cboot</e>
@@ -1323,7 +1323,7 @@
       </input>
     </math>
   </region>
-  <region id="87" left="0" top="2808" width="242" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="87" left="0" top="2799" width="242" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Iin_avg</e>
@@ -1341,7 +1341,7 @@
       </result>
     </math>
   </region>
-  <region id="88" left="0" top="2844" width="304" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="88" left="0" top="2835" width="304" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Ci</e>
@@ -1364,7 +1364,7 @@
       </result>
     </math>
   </region>
-  <region id="89" left="306" top="2853" width="124" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="89" left="306" top="2844" width="124" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
     <math optimize="2">
       <input>
         <e type="operand">Ci</e>
@@ -1380,7 +1380,7 @@
       </input>
     </math>
   </region>
-  <region id="90" left="0" top="2889" width="256" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="90" left="0" top="2880" width="256" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">ESR_Ci</e>
@@ -1396,12 +1396,12 @@
       </result>
     </math>
   </region>
-  <region id="91" left="297" top="2889" width="86" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="91" left="297" top="2880" width="86" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="rus">
       <p>voltage &gt;</p>
     </text>
   </region>
-  <region id="92" left="378" top="2889" width="186" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="92" left="378" top="2880" width="186" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Vin_max</e>
@@ -1414,7 +1414,7 @@
       </result>
     </math>
   </region>
-  <region id="93" left="0" top="2925" width="668" height="82" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="93" left="0" top="2916" width="668" height="82" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">ICi_rms</e>
