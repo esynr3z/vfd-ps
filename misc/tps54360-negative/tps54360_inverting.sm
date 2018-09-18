@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0aa7de89-0e44-4dbb-804c-4a91ae92f9f2</id>
-      <revision>25</revision>
+      <revision>33</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -154,20 +154,20 @@
       <p fontName="Arial">Design parameters</p>
     </text>
   </region>
-  <region id="15" left="0" top="207" width="94" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="15" left="0" top="207" width="110" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Vin_min</e>
-        <e type="operand">5</e>
+        <e type="operand">4.5</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="16" left="108" top="207" width="102" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="16" left="108" top="207" width="110" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Vin_max</e>
-        <e type="operand">12</e>
+        <e type="operand">5.5</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
@@ -301,7 +301,7 @@
     <math>
       <input>
         <e type="operand">Rtrim</e>
-        <e type="operand">15</e>
+        <e type="operand">20</e>
         <e type="operand">10</e>
         <e type="operand">3</e>
         <e type="operator" args="2">^</e>
@@ -310,11 +310,11 @@
       </input>
     </math>
   </region>
-  <region id="28" left="126" top="594" width="222" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
-    <math>
+  <region id="28" left="126" top="594" width="154" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+    <math optimize="2">
       <input>
         <e type="operand">R1</e>
-        <e type="operand">18</e>
+        <e type="operand">16</e>
         <e type="operand">10</e>
         <e type="operand">3</e>
         <e type="operator" args="2">^</e>
@@ -323,14 +323,11 @@
         <e type="operator" args="2">+</e>
         <e type="operator" args="2">:</e>
       </input>
-      <result action="numeric">
-        <e type="operand">33000</e>
-      </result>
     </math>
   </region>
-  <region id="29" left="342" top="603" width="319" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="29" left="288" top="603" width="319" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="rus">
-      <p>//Rtrim to regulate from -16V to -24V </p>
+      <p>//Rtrim to regulate from -15V to -30V </p>
     </text>
   </region>
   <region id="30" left="0" top="630" width="113" height="31" border="true" color="#000000" bgColor="#ffffff" fontSize="14">
@@ -350,7 +347,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.8276</e>
+        <e type="operand">0.8421</e>
       </result>
     </math>
   </region>
@@ -366,7 +363,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.6667</e>
+        <e type="operand">0.8136</e>
       </result>
     </math>
   </region>
@@ -407,7 +404,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.6789</e>
+        <e type="operand">0.6217</e>
       </result>
     </math>
   </region>
@@ -499,7 +496,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.9837</e>
+        <e type="operand">6.0652</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="2">^</e>
@@ -538,7 +535,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">2.9506</e>
+        <e type="operand">6.1193</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="2">^</e>
@@ -666,7 +663,7 @@
       <p fontName="Arial">Inductor</p>
     </text>
   </region>
-  <region id="50" left="0" top="1512" width="190" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="50" left="0" top="1512" width="206" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">ILavg</e>
@@ -678,7 +675,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.75</e>
+        <e type="operand">1.3409</e>
       </result>
     </math>
   </region>
@@ -698,7 +695,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.4293</e>
+        <e type="operand">1.3857</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="1">-</e>
@@ -711,7 +708,7 @@
     <math>
       <input>
         <e type="operand">Lo</e>
-        <e type="operand">47</e>
+        <e type="operand">22</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="1">-</e>
@@ -743,7 +740,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.4957</e>
+        <e type="operand">1.6727</e>
       </result>
     </math>
   </region>
@@ -780,7 +777,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.4502</e>
+        <e type="operand">1.5842</e>
       </result>
     </math>
   </region>
@@ -789,7 +786,7 @@
       <p fontName="Arial">Output capacitor</p>
     </text>
   </region>
-  <region id="56" left="0" top="1764" width="280" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="56" left="0" top="1764" width="272" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Co_min</e>
@@ -803,7 +800,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.2957</e>
+        <e type="operand">4.371</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="1">-</e>
@@ -852,7 +849,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.0334</e>
+        <e type="operand">0.0299</e>
       </result>
     </math>
   </region>
@@ -873,7 +870,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.5477</e>
+        <e type="operand">0.5774</e>
       </result>
     </math>
   </region>
@@ -887,7 +884,7 @@
       <p>Diode volatage should be greater then</p>
     </text>
   </region>
-  <region id="62" left="0" top="1962" width="170" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="62" left="0" top="1962" width="186" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Vin_max</e>
@@ -896,7 +893,7 @@
         <e type="operator" args="2">+</e>
       </input>
       <result action="numeric">
-        <e type="operand">36</e>
+        <e type="operand">29.5</e>
       </result>
     </math>
   </region>
@@ -941,7 +938,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.92</e>
+        <e type="operand">3.88</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -994,7 +991,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.5781</e>
+        <e type="operand">0.5761</e>
       </result>
     </math>
   </region>
@@ -1028,7 +1025,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">51.4771</e>
+        <e type="operand">51.3859</e>
       </result>
     </math>
   </region>
@@ -1053,7 +1050,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">5.0648</e>
+        <e type="operand">5.6644</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="2">^</e>
@@ -1098,7 +1095,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">11408.7315</e>
+        <e type="operand">19972.8983</e>
       </result>
     </math>
   </region>
@@ -1125,11 +1122,11 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">293.9475</e>
+        <e type="operand">319.8548</e>
       </result>
     </math>
   </region>
-  <region id="75" left="0" top="2412" width="240" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="75" left="0" top="2412" width="248" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Fco</e>
@@ -1142,11 +1139,11 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1831.275</e>
+        <e type="operand">2527.5337</e>
       </result>
     </math>
   </region>
-  <region id="76" left="0" top="2466" width="336" height="62" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="76" left="0" top="2466" width="328" height="62" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Kbb</e>
@@ -1170,7 +1167,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">108.6792</e>
+        <e type="operand">98.7429</e>
       </result>
     </math>
   </region>
@@ -1195,7 +1192,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4913.4934</e>
+        <e type="operand">6859.4874</e>
       </result>
     </math>
   </region>
@@ -1203,12 +1200,12 @@
     <math>
       <input>
         <e type="operand">Rcomp</e>
-        <e type="operand">4700</e>
+        <e type="operand">6800</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="79" left="0" top="2592" width="300" height="59" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="79" left="0" top="2592" width="308" height="59" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Czero</e>
@@ -1226,7 +1223,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">2.304</e>
+        <e type="operand">1.4635</e>
         <e type="operand">10</e>
         <e type="operand">7</e>
         <e type="operator" args="1">-</e>
@@ -1239,7 +1236,7 @@
     <math>
       <input>
         <e type="operand">Czero</e>
-        <e type="operand">220</e>
+        <e type="operand">150</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1265,7 +1262,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">2.9681</e>
+        <e type="operand">1.1718</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1278,7 +1275,7 @@
     <math>
       <input>
         <e type="operand">Cpole</e>
-        <e type="operand">3.3</e>
+        <e type="operand">1.2</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1326,7 +1323,7 @@
       </input>
     </math>
   </region>
-  <region id="87" left="0" top="2808" width="218" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="87" left="0" top="2808" width="242" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Iin_avg</e>
@@ -1340,7 +1337,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.2</e>
+        <e type="operand">1.3333</e>
       </result>
     </math>
   </region>
@@ -1358,7 +1355,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">2.4915</e>
+        <e type="operand">3.0759</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="1">-</e>
@@ -1395,7 +1392,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.0417</e>
+        <e type="operand">0.0337</e>
       </result>
     </math>
   </region>
@@ -1404,7 +1401,7 @@
       <p>voltage &gt;</p>
     </text>
   </region>
-  <region id="92" left="378" top="2889" width="170" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="92" left="378" top="2889" width="186" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Vin_max</e>
@@ -1413,11 +1410,11 @@
         <e type="operator" args="2">+</e>
       </input>
       <result action="numeric">
-        <e type="operand">36</e>
+        <e type="operand">29.5</e>
       </result>
     </math>
   </region>
-  <region id="93" left="0" top="2925" width="660" height="82" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="93" left="0" top="2925" width="668" height="82" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">ICi_rms</e>
@@ -1458,7 +1455,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.842</e>
+        <e type="operand">0.6129</e>
       </result>
     </math>
   </region>
