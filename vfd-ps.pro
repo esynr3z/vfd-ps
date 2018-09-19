@@ -1,4 +1,4 @@
-update=Sun 26 Aug 2018 19:01:12 MSK
+update=19/09/2018 11:25:35
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=esynr3z.kicad_wks
-LastNetListRead=
+LastNetListRead=vfd-ps.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

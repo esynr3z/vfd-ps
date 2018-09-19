@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0aa7de89-0e44-4dbb-804c-4a91ae92f9f2</id>
-      <revision>34</revision>
+      <revision>37</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -205,11 +205,11 @@
       </input>
     </math>
   </region>
-  <region id="20" left="0" top="279" width="120" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="20" left="0" top="279" width="112" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Fsw</e>
-        <e type="operand">1000</e>
+        <e type="operand">500</e>
         <e type="operand">10</e>
         <e type="operand">3</e>
         <e type="operator" args="2">^</e>
@@ -591,7 +591,7 @@
       </result>
     </math>
   </region>
-  <region id="46" left="0" top="1296" width="272" height="79" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="46" left="0" top="1296" width="274" height="79" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">RT</e>
@@ -612,7 +612,11 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">96285.3086</e>
+        <e type="operand">1.9364</e>
+        <e type="operand">10</e>
+        <e type="operand">5</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
@@ -620,7 +624,7 @@
     <math>
       <input>
         <e type="operand">RT</e>
-        <e type="operand">100</e>
+        <e type="operand">220</e>
         <e type="operand">10</e>
         <e type="operand">3</e>
         <e type="operator" args="2">^</e>
@@ -650,7 +654,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">9.6328</e>
+        <e type="operand">4.4097</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="2">^</e>
@@ -695,7 +699,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.3857</e>
+        <e type="operand">3.0269</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="1">-</e>
@@ -708,7 +712,7 @@
     <math>
       <input>
         <e type="operand">Lo</e>
-        <e type="operand">22</e>
+        <e type="operand">33</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="1">-</e>
@@ -740,7 +744,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.6727</e>
+        <e type="operand">1.7135</e>
       </result>
     </math>
   </region>
@@ -777,7 +781,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.5842</e>
+        <e type="operand">1.5851</e>
       </result>
     </math>
   </region>
@@ -786,7 +790,7 @@
       <p fontName="Arial">Output capacitor</p>
     </text>
   </region>
-  <region id="56" left="0" top="1764" width="272" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="56" left="0" top="1764" width="280" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Co_min</e>
@@ -800,7 +804,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.371</e>
+        <e type="operand">9.5483</e>
         <e type="operand">10</e>
         <e type="operand">6</e>
         <e type="operator" args="1">-</e>
@@ -813,7 +817,7 @@
     <math optimize="2">
       <input>
         <e type="operand">Co</e>
-        <e type="operand">2</e>
+        <e type="operand">3</e>
         <e type="operand">4.7</e>
         <e type="operator" args="2">*</e>
         <e type="operand">10</e>
@@ -849,7 +853,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.0299</e>
+        <e type="operand">0.0292</e>
       </result>
     </math>
   </region>
@@ -991,7 +995,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.5761</e>
+        <e type="operand">0.4819</e>
       </result>
     </math>
   </region>
@@ -1025,7 +1029,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">51.3859</e>
+        <e type="operand">47.0725</e>
       </result>
     </math>
   </region>
@@ -1050,7 +1054,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">5.6644</e>
+        <e type="operand">3.8683</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="2">^</e>
@@ -1095,7 +1099,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">19972.8983</e>
+        <e type="operand">13315.2655</e>
       </result>
     </math>
   </region>
@@ -1122,7 +1126,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">319.8548</e>
+        <e type="operand">213.2365</e>
       </result>
     </math>
   </region>
@@ -1139,7 +1143,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">2527.5337</e>
+        <e type="operand">1685.0225</e>
       </result>
     </math>
   </region>
@@ -1223,7 +1227,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.4635</e>
+        <e type="operand">2.1952</e>
         <e type="operand">10</e>
         <e type="operand">7</e>
         <e type="operator" args="1">-</e>
@@ -1236,7 +1240,7 @@
     <math>
       <input>
         <e type="operand">Czero</e>
-        <e type="operand">150</e>
+        <e type="operand">220</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1262,7 +1266,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.1718</e>
+        <e type="operand">1.7578</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1271,11 +1275,11 @@
       </result>
     </math>
   </region>
-  <region id="82" left="333" top="2664" width="124" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="82" left="333" top="2664" width="140" height="33" color="#000000" bgColor="#ffff00" fontSize="10">
     <math>
       <input>
         <e type="operand">Cpole</e>
-        <e type="operand">1</e>
+        <e type="operand">1.8</e>
         <e type="operand">10</e>
         <e type="operand">9</e>
         <e type="operator" args="1">-</e>
@@ -1355,7 +1359,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">3.0759</e>
+        <e type="operand">6.7192</e>
         <e type="operand">10</e>
         <e type="operand">5</e>
         <e type="operator" args="1">-</e>
@@ -1368,7 +1372,7 @@
     <math optimize="2">
       <input>
         <e type="operand">Ci</e>
-        <e type="operand">2</e>
+        <e type="operand">3</e>
         <e type="operand">22</e>
         <e type="operator" args="2">*</e>
         <e type="operand">10</e>
@@ -1455,7 +1459,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.6129</e>
+        <e type="operand">0.6343</e>
       </result>
     </math>
   </region>
