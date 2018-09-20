@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:vfd-ps-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1044,4 +1043,19 @@ Wire Wire Line
 	5950 5050 5950 5000
 Wire Wire Line
 	5500 5000 5500 5050
+$Comp
+L esynr3z_Misc:TestPoint TP6
+U 1 1 5BA45EBE
+P 3500 3450
+F 0 "TP6" H 3450 3550 50  0000 L CNN
+F 1 "TestPoint" H 3553 3461 50  0001 L CNN
+F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 3700 3450 50  0001 C CNN
+F 3 "~" H 3700 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3450 3500 3500
+Wire Wire Line
+	3500 3500 3350 3500
 $EndSCHEMATC
