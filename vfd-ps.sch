@@ -398,107 +398,6 @@ Text GLabel 7000 4050 2    50   Input ~ 0
 VF1
 Text GLabel 7000 5000 2    50   Input ~ 0
 VF2
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5B8EFC5A
-P 7700 4100
-F 0 "J1" H 7620 3775 50  0000 C CNN
-F 1 "Conn_01x02" H 7620 3866 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x02_P2.54mm_Vertical" H 7700 4100 50  0001 C CNN
-F 3 "~" H 7700 4100 50  0001 C CNN
-	1    7700 4100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5B8EFEED
-P 7700 4800
-F 0 "J2" H 7620 4475 50  0000 C CNN
-F 1 "Conn_01x02" H 7620 4566 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x02_P2.54mm_Vertical" H 7700 4800 50  0001 C CNN
-F 3 "~" H 7700 4800 50  0001 C CNN
-	1    7700 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5B8F1F2E
-P 7700 5400
-F 0 "J3" H 7620 5075 50  0000 C CNN
-F 1 "Conn_01x02" H 7620 5166 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x02_P2.54mm_Vertical" H 7700 5400 50  0001 C CNN
-F 3 "~" H 7700 5400 50  0001 C CNN
-	1    7700 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR05
-U 1 1 5B8F438D
-P 8100 3950
-F 0 "#PWR05" H 8100 3800 50  0001 C CNN
-F 1 "+5V" H 8115 4123 50  0000 C CNN
-F 2 "" H 8100 3950 50  0001 C CNN
-F 3 "" H 8100 3950 50  0001 C CNN
-	1    8100 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5B8F64F3
-P 8100 4150
-F 0 "#PWR06" H 8100 3900 50  0001 C CNN
-F 1 "GND" H 8105 3977 50  0000 C CNN
-F 2 "" H 8100 4150 50  0001 C CNN
-F 3 "" H 8100 4150 50  0001 C CNN
-	1    8100 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5B8F84EC
-P 8100 4850
-F 0 "#PWR08" H 8100 4600 50  0001 C CNN
-F 1 "GND" H 8105 4677 50  0000 C CNN
-F 2 "" H 8100 4850 50  0001 C CNN
-F 3 "" H 8100 4850 50  0001 C CNN
-	1    8100 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VEE #PWR07
-U 1 1 5B8FA652
-P 8100 4650
-F 0 "#PWR07" H 8100 4500 50  0001 C CNN
-F 1 "VEE" H 8117 4823 50  0000 C CNN
-F 2 "" H 8100 4650 50  0001 C CNN
-F 3 "" H 8100 4650 50  0001 C CNN
-	1    8100 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 4000 8100 4000
-Wire Wire Line
-	8100 4000 8100 3950
-Wire Wire Line
-	7900 4100 8100 4100
-Wire Wire Line
-	8100 4100 8100 4150
-Wire Wire Line
-	7900 4700 8100 4700
-Wire Wire Line
-	8100 4700 8100 4650
-Wire Wire Line
-	7900 4800 8100 4800
-Wire Wire Line
-	8100 4800 8100 4850
-Text GLabel 8000 5300 2    50   Input ~ 0
-VF1
-Text GLabel 8000 5400 2    50   Input ~ 0
-VF2
-Wire Wire Line
-	8000 5300 7900 5300
-Wire Wire Line
-	8000 5400 7900 5400
 Text Notes 4650 1750 0    79   ~ 0
 [-15V;-30V] 0.25A @ 5V in
 Text Notes 4550 3950 0    79   ~ 0
@@ -878,21 +777,19 @@ $EndComp
 $Comp
 L esynr3z_Misc:TestPoint TP3
 U 1 1 5BA30196
-P 5500 4950
-F 0 "TP3" H 5450 5050 50  0000 L CNN
-F 1 "TestPoint" H 5553 4961 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 4950 50  0001 C CNN
-F 3 "~" H 5700 4950 50  0001 C CNN
-	1    5500 4950
-	1    0    0    -1  
+P 5500 5050
+F 0 "TP3" H 5450 5200 50  0000 L CNN
+F 1 "TestPoint" H 5553 5061 50  0001 L CNN
+F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 5050 50  0001 C CNN
+F 3 "~" H 5700 5050 50  0001 C CNN
+	1    5500 5050
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5500 5000 5450 5000
 Connection ~ 5500 5000
 Wire Wire Line
 	5500 4000 5500 4050
-Wire Wire Line
-	5500 4950 5500 5000
 Wire Wire Line
 	6100 2100 6100 2150
 $Comp
@@ -984,4 +881,167 @@ Text Notes 4950 1600 0    79   ~ 0
 Negative supply
 Text Notes 4450 3800 0    79   ~ 0
 Filament driver
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5BA3AA64
+P 2950 3400
+F 0 "J1" H 2870 2975 50  0000 C CNN
+F 1 "Conn_01x04" H 2870 3066 50  0000 C CNN
+F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 2950 3400 50  0001 C CNN
+F 3 "~" H 2950 3400 50  0001 C CNN
+	1    2950 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5BA3ACB7
+P 7650 4150
+F 0 "J2" H 7570 3725 50  0000 C CNN
+F 1 "Conn_01x04" H 7570 3816 50  0000 C CNN
+F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 7650 4150 50  0001 C CNN
+F 3 "~" H 7650 4150 50  0001 C CNN
+	1    7650 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5BA40438
+P 7650 4900
+F 0 "J3" H 7570 4475 50  0000 C CNN
+F 1 "Conn_01x04" H 7570 4566 50  0000 C CNN
+F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 7650 4900 50  0001 C CNN
+F 3 "~" H 7650 4900 50  0001 C CNN
+	1    7650 4900
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 4800 2    50   Input ~ 0
+VF1
+Text GLabel 7950 4900 2    50   Input ~ 0
+VF2
+Wire Wire Line
+	7950 4800 7900 4800
+Wire Wire Line
+	7950 4900 7900 4900
+$Comp
+L power:GND #PWR08
+U 1 1 5BA4B596
+P 8050 4300
+F 0 "#PWR08" H 8050 4050 50  0001 C CNN
+F 1 "GND" H 8055 4127 50  0000 C CNN
+F 2 "" H 8050 4300 50  0001 C CNN
+F 3 "" H 8050 4300 50  0001 C CNN
+	1    8050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR07
+U 1 1 5BA4B59C
+P 8050 3900
+F 0 "#PWR07" H 8050 3750 50  0001 C CNN
+F 1 "VEE" H 8067 4073 50  0000 C CNN
+F 2 "" H 8050 3900 50  0001 C CNN
+F 3 "" H 8050 3900 50  0001 C CNN
+	1    8050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4050 8050 4050
+Wire Wire Line
+	8050 4050 8050 3950
+Wire Wire Line
+	7850 4150 8050 4150
+Wire Wire Line
+	8050 4150 8050 4250
+$Comp
+L power:+5V #PWR05
+U 1 1 5BA512C2
+P 3350 3150
+F 0 "#PWR05" H 3350 3000 50  0001 C CNN
+F 1 "+5V" H 3365 3323 50  0000 C CNN
+F 2 "" H 3350 3150 50  0001 C CNN
+F 3 "" H 3350 3150 50  0001 C CNN
+	1    3350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5BA512C8
+P 3350 3550
+F 0 "#PWR06" H 3350 3300 50  0001 C CNN
+F 1 "GND" H 3355 3377 50  0000 C CNN
+F 2 "" H 3350 3550 50  0001 C CNN
+F 3 "" H 3350 3550 50  0001 C CNN
+	1    3350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3300 3350 3300
+Wire Wire Line
+	3350 3300 3350 3200
+Wire Wire Line
+	3150 3400 3350 3400
+Wire Wire Line
+	3350 3400 3350 3500
+Wire Wire Line
+	3150 3200 3350 3200
+Connection ~ 3350 3200
+Wire Wire Line
+	3350 3200 3350 3150
+Wire Wire Line
+	3150 3500 3350 3500
+Connection ~ 3350 3500
+Wire Wire Line
+	3350 3500 3350 3550
+Wire Wire Line
+	7850 3950 8050 3950
+Connection ~ 8050 3950
+Wire Wire Line
+	8050 3950 8050 3900
+Wire Wire Line
+	7850 4250 8050 4250
+Connection ~ 8050 4250
+Wire Wire Line
+	8050 4250 8050 4300
+Wire Wire Line
+	7850 4700 7900 4700
+Wire Wire Line
+	7900 4700 7900 4800
+Connection ~ 7900 4800
+Wire Wire Line
+	7900 4800 7850 4800
+Wire Wire Line
+	7850 5000 7900 5000
+Wire Wire Line
+	7900 5000 7900 4900
+Connection ~ 7900 4900
+Wire Wire Line
+	7900 4900 7850 4900
+$Comp
+L esynr3z_Misc:TestPoint TP4
+U 1 1 5BACC723
+P 5950 4000
+F 0 "TP4" H 5900 4100 50  0000 L CNN
+F 1 "TestPoint" H 6003 4011 50  0001 L CNN
+F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    5950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4000 5950 4050
+$Comp
+L esynr3z_Misc:TestPoint TP5
+U 1 1 5BAD95CE
+P 5950 5050
+F 0 "TP5" H 5900 5200 50  0000 L CNN
+F 1 "TestPoint" H 6003 5061 50  0001 L CNN
+F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 5050 50  0001 C CNN
+F 3 "~" H 6150 5050 50  0001 C CNN
+	1    5950 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 5050 5950 5000
+Wire Wire Line
+	5500 5000 5500 5050
 $EndSCHEMATC
