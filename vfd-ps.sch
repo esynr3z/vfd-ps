@@ -14,52 +14,52 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_POT_TRIM RV1
+L vfd-ps:Device_R_POT_TRIM RV1
 U 1 1 5B88D373
 P 6950 2350
 F 0 "RV1" H 6800 2400 50  0000 C CNN
 F 1 "20k" H 6800 2300 50  0000 C CNN
-F 2 "esynr3z_Potentiometer:Bourns_3362P" H 6950 2350 50  0001 C CNN
+F 2 "lib_fp:Bourns_3362P" H 6950 2350 50  0001 C CNN
 F 3 "~" H 6950 2350 50  0001 C CNN
 	1    6950 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Core_Iron L1
+L vfd-ps:Device_L_Core_Iron L1
 U 1 1 5B88D37A
 P 6700 2150
 F 0 "L1" V 6925 2150 50  0000 C CNN
 F 1 "33u" V 6834 2150 50  0000 C CNN
-F 2 "esynr3z_Inductor:Sumida_CDRH127" H 6700 2150 50  0001 C CNN
+F 2 "lib_fp:Sumida_CDRH127" H 6700 2150 50  0001 C CNN
 F 3 "~" H 6700 2150 50  0001 C CNN
 	1    6700 2150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
+L vfd-ps:Device_R R1
 U 1 1 5B88D381
 P 4450 2350
 F 0 "R1" H 4520 2396 50  0000 L CNN
 F 1 "dnf" H 4520 2305 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 4380 2350 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 4380 2350 50  0001 C CNN
 F 3 "~" H 4450 2350 50  0001 C CNN
 	1    4450 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L vfd-ps:Device_C C3
 U 1 1 5B88D388
 P 3700 2350
 F 0 "C3" H 3815 2396 50  0000 L CNN
 F 1 "22u" H 3815 2305 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 3738 2200 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 3738 2200 50  0001 C CNN
 F 3 "~" H 3700 2350 50  0001 C CNN
 F 4 "16V X5R" H 3900 2200 50  0000 C CNN "Rating"
 	1    3700 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L vfd-ps:power_GND #PWR02
 U 1 1 5B88D3B0
 P 8450 2200
 F 0 "#PWR02" H 8450 1950 50  0001 C CNN
@@ -72,18 +72,18 @@ $EndComp
 Wire Wire Line
 	8450 2200 8450 2150
 $Comp
-L esynr3z_AmplifierAudio:LM4871 U2
+L vfd-ps:esynr3z_AmplifierAudio_LM4871 U2
 U 1 1 5B88F7E5
 P 5050 5000
 F 0 "U2" H 4800 5450 50  0000 C CNN
 F 1 "LM4871" H 5250 5450 50  0000 C CNN
-F 2 "esynr3z_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6000 5600 50  0001 C CIN
+F 2 "lib_fp:VSSOP-8_3.0x3.0mm_P0.65mm" H 6000 5600 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm4871.pdf" H 6050 5700 50  0001 C CNN
 	1    5050 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L vfd-ps:power_GND #PWR013
 U 1 1 5B88FA47
 P 5050 5650
 F 0 "#PWR013" H 5050 5400 50  0001 C CNN
@@ -96,7 +96,7 @@ $EndComp
 Wire Wire Line
 	5050 5550 5050 5600
 $Comp
-L power:+5V #PWR010
+L vfd-ps:power_+5V #PWR010
 U 1 1 5B89051A
 P 5050 4350
 F 0 "#PWR010" H 5050 4200 50  0001 C CNN
@@ -107,19 +107,19 @@ F 3 "" H 5050 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L vfd-ps:Device_C C12
 U 1 1 5B890758
 P 4500 4450
 F 0 "C12" V 4248 4450 50  0000 C CNN
 F 1 "22u" V 4339 4450 50  0000 C CNN
-F 2 "esynr3z_Capacitor:C_1210" H 4538 4300 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 4538 4300 50  0001 C CNN
 F 3 "~" H 4500 4450 50  0001 C CNN
 F 4 "16V X5R" V 4650 4500 50  0000 C CNN "Rating"
 	1    4500 4450
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR012
+L vfd-ps:power_GND #PWR012
 U 1 1 5B891CBA
 P 4300 4550
 F 0 "#PWR012" H 4300 4300 50  0001 C CNN
@@ -130,135 +130,135 @@ F 3 "" H 4300 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L vfd-ps:Device_R R10
 U 1 1 5B89283C
 P 3900 4600
 F 0 "R10" H 3830 4554 50  0000 R CNN
 F 1 "2.2k" H 3830 4645 50  0000 R CNN
-F 2 "esynr3z_Resistor:R_0805" V 3830 4600 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 3830 4600 50  0001 C CNN
 F 3 "~" H 3900 4600 50  0001 C CNN
 	1    3900 4600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R8
+L vfd-ps:Device_R R8
 U 1 1 5B8928DF
 P 3200 4600
 F 0 "R8" H 3130 4554 50  0000 R CNN
 F 1 "10k" H 3130 4645 50  0000 R CNN
-F 2 "esynr3z_Resistor:R_0805" V 3130 4600 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 3130 4600 50  0001 C CNN
 F 3 "~" H 3200 4600 50  0001 C CNN
 	1    3200 4600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R9
+L vfd-ps:Device_R R9
 U 1 1 5B892994
 P 3500 4600
 F 0 "R9" H 3430 4554 50  0000 R CNN
 F 1 "10k" H 3430 4645 50  0000 R CNN
-F 2 "esynr3z_Resistor:R_0805" V 3430 4600 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 3430 4600 50  0001 C CNN
 F 3 "~" H 3500 4600 50  0001 C CNN
 	1    3500 4600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R12
+L vfd-ps:Device_R R12
 U 1 1 5B892A41
 P 3500 5400
 F 0 "R12" H 3570 5446 50  0000 L CNN
 F 1 "10k" H 3570 5355 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 3430 5400 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 3430 5400 50  0001 C CNN
 F 3 "~" H 3500 5400 50  0001 C CNN
 	1    3500 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L vfd-ps:Device_C C14
 U 1 1 5B892B0C
 P 3900 5400
 F 0 "C14" H 4015 5446 50  0000 L CNN
 F 1 "10n" H 4015 5355 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_0805" H 3938 5250 50  0001 C CNN
+F 2 "lib_fp:C_0805" H 3938 5250 50  0001 C CNN
 F 3 "~" H 3900 5400 50  0001 C CNN
 	1    3900 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C15
+L vfd-ps:Device_C C15
 U 1 1 5B892BA9
 P 4300 5400
 F 0 "C15" H 4415 5446 50  0000 L CNN
 F 1 "1u" H 4415 5355 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1206" H 4338 5250 50  0001 C CNN
+F 2 "lib_fp:C_1206" H 4338 5250 50  0001 C CNN
 F 3 "~" H 4300 5400 50  0001 C CNN
 	1    4300 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT_TRIM RV2
+L vfd-ps:Device_R_POT_TRIM RV2
 U 1 1 5B892CB7
 P 5750 4050
 F 0 "RV2" V 5543 4050 50  0000 C CNN
 F 1 "50" V 5634 4050 50  0000 C CNN
-F 2 "esynr3z_Potentiometer:Bourns_3362P" H 5750 4050 50  0001 C CNN
+F 2 "lib_fp:Bourns_3362P" H 5750 4050 50  0001 C CNN
 F 3 "~" H 5750 4050 50  0001 C CNN
 	1    5750 4050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT_TRIM RV3
+L vfd-ps:Device_R_POT_TRIM RV3
 U 1 1 5B892DAA
 P 5750 5000
 F 0 "RV3" V 5636 5000 50  0000 C CNN
 F 1 "50" V 5545 5000 50  0000 C CNN
-F 2 "esynr3z_Potentiometer:Bourns_3362P" H 5750 5000 50  0001 C CNN
+F 2 "lib_fp:Bourns_3362P" H 5750 5000 50  0001 C CNN
 F 3 "~" H 5750 5000 50  0001 C CNN
 	1    5750 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP C11
+L vfd-ps:Device_CP C11
 U 1 1 5B892E97
 P 6200 4050
 F 0 "C11" V 5945 4050 50  0000 C CNN
 F 1 "22u" V 6036 4050 50  0000 C CNN
-F 2 "esynr3z_Capacitor:CP_Elec_6.3x7.7" H 6238 3900 50  0001 C CNN
+F 2 "lib_fp:CP_Elec_6.3x7.7" H 6238 3900 50  0001 C CNN
 F 3 "~" H 6200 4050 50  0001 C CNN
 F 4 "50V" V 6350 4050 50  0000 C CNN "Rating"
 	1    6200 4050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C13
+L vfd-ps:Device_CP C13
 U 1 1 5B892FC6
 P 6200 5000
 F 0 "C13" V 5945 5000 50  0000 C CNN
 F 1 "22u" V 6036 5000 50  0000 C CNN
-F 2 "esynr3z_Capacitor:CP_Elec_6.3x7.7" H 6238 4850 50  0001 C CNN
+F 2 "lib_fp:CP_Elec_6.3x7.7" H 6238 4850 50  0001 C CNN
 F 3 "~" H 6200 5000 50  0001 C CNN
 F 4 "50V" V 6350 5000 50  0000 C CNN "Rating"
 	1    6200 5000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
+L vfd-ps:Device_R R7
 U 1 1 5B893154
 P 6750 4250
 F 0 "R7" H 6820 4296 50  0000 L CNN
 F 1 "100" H 6820 4205 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 6680 4250 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 6680 4250 50  0001 C CNN
 F 3 "~" H 6750 4250 50  0001 C CNN
 	1    6750 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L vfd-ps:Device_R R11
 U 1 1 5B89320D
 P 6750 4800
 F 0 "R11" H 6820 4846 50  0000 L CNN
 F 1 "100" H 6820 4755 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 6680 4800 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 6680 4800 50  0001 C CNN
 F 3 "~" H 6750 4800 50  0001 C CNN
 	1    6750 4800
 	1    0    0    -1  
@@ -306,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 5000 3500 5000
 $Comp
-L power:+5V #PWR09
+L vfd-ps:power_+5V #PWR09
 U 1 1 5B8A88AD
 P 3200 4150
 F 0 "#PWR09" H 3200 4000 50  0001 C CNN
@@ -358,7 +358,7 @@ Connection ~ 5950 5000
 Wire Wire Line
 	5950 5000 5900 5000
 $Comp
-L power:VEE #PWR?
+L vfd-ps:power_VEE #PWR?
 U 1 1 5B8C6C9E
 P 5950 4500
 AR Path="/5B82D2F4/5B8C6C9E" Ref="#PWR?"  Part="1" 
@@ -402,58 +402,58 @@ Text Notes 4650 1750 0    79   ~ 0
 Text Notes 4550 3950 0    79   ~ 0
 2W @ 5V in
 $Comp
-L Device:C C2
+L vfd-ps:Device_C C2
 U 1 1 5BA15DBC
 P 3300 2350
 F 0 "C2" H 3415 2396 50  0000 L CNN
 F 1 "22u" H 3415 2305 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 3338 2200 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 3338 2200 50  0001 C CNN
 F 3 "~" H 3300 2350 50  0001 C CNN
 F 4 "16V X5R" H 3500 2200 50  0000 C CNN "Rating"
 	1    3300 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L vfd-ps:Device_C C4
 U 1 1 5BA1C527
 P 4100 2350
 F 0 "C4" H 4215 2396 50  0000 L CNN
 F 1 "1u" H 4215 2305 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1206" H 4138 2200 50  0001 C CNN
+F 2 "lib_fp:C_1206" H 4138 2200 50  0001 C CNN
 F 3 "~" H 4100 2350 50  0001 C CNN
 F 4 "50V X7R" H 4300 2200 50  0000 C CNN "Rating"
 	1    4100 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L esynr3z_RegulatorSwitching:TPS54360DDA U1
+L vfd-ps:esynr3z_RegulatorSwitching_TPS54360DDA U1
 U 1 1 5BA1E8E0
 P 5250 2350
 F 0 "U1" H 5250 2817 50  0000 C CNN
 F 1 "TPS54360DDA" H 5250 2726 50  0000 C CNN
-F 2 "esynr3z_SO:TI_SO-PowerPAD-8_ThermalVias" H 5600 2950 50  0001 L CIN
+F 2 "lib_fp:TI_SO-PowerPAD-8_ThermalVias" H 5600 2950 50  0001 L CIN
 F 3 "www.ti.com/lit/ds/symlink/tps54360.pdf" H 6350 3050 50  0001 C CNN
 	1    5250 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L vfd-ps:Device_R R3
 U 1 1 5BA1ED34
 P 4450 2850
 F 0 "R3" H 4520 2896 50  0000 L CNN
 F 1 "dnf" H 4520 2805 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 4380 2850 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 4380 2850 50  0001 C CNN
 F 3 "~" H 4450 2850 50  0001 C CNN
 	1    4450 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L vfd-ps:Device_R R4
 U 1 1 5BA20E92
 P 4750 2850
 F 0 "R4" H 4820 2896 50  0000 L CNN
 F 1 "220k" H 4820 2805 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 4680 2850 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 4680 2850 50  0001 C CNN
 F 3 "~" H 4750 2850 50  0001 C CNN
 	1    4750 2850
 	1    0    0    -1  
@@ -477,7 +477,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 2700 4750 2650
 $Comp
-L power:GND #PWR03
+L vfd-ps:power_GND #PWR03
 U 1 1 5BA3B1F8
 P 3700 2650
 F 0 "#PWR03" H 3700 2400 50  0001 C CNN
@@ -496,45 +496,45 @@ Connection ~ 4450 3400
 Wire Wire Line
 	4450 3400 4750 3400
 $Comp
-L Device:C C5
+L vfd-ps:Device_C C5
 U 1 1 5BA4B6D0
 P 5900 2350
 F 0 "C5" V 6050 2300 50  0000 L CNN
 F 1 "100n" V 5750 2250 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_0805" H 5938 2200 50  0001 C CNN
+F 2 "lib_fp:C_0805" H 5938 2200 50  0001 C CNN
 F 3 "~" H 5900 2350 50  0001 C CNN
 	1    5900 2350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L vfd-ps:Device_R R5
 U 1 1 5BA5DB54
 P 5750 2850
 F 0 "R5" H 5820 2896 50  0000 L CNN
 F 1 "6.8k" H 5820 2805 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 5680 2850 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 5680 2850 50  0001 C CNN
 F 3 "~" H 5750 2850 50  0001 C CNN
 	1    5750 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L vfd-ps:Device_C C9
 U 1 1 5BA616E8
 P 5750 3200
 F 0 "C9" H 5865 3246 50  0000 L CNN
 F 1 "220n" H 5865 3155 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_0805" H 5788 3050 50  0001 C CNN
+F 2 "lib_fp:C_0805" H 5788 3050 50  0001 C CNN
 F 3 "~" H 5750 3200 50  0001 C CNN
 	1    5750 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L vfd-ps:Device_C C10
 U 1 1 5BA65222
 P 6150 3200
 F 0 "C10" H 6265 3246 50  0000 L CNN
 F 1 "1.8n" H 6265 3155 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_0805" H 6188 3050 50  0001 C CNN
+F 2 "lib_fp:C_0805" H 6188 3050 50  0001 C CNN
 F 3 "~" H 6150 3200 50  0001 C CNN
 	1    6150 3200
 	1    0    0    -1  
@@ -581,23 +581,23 @@ Wire Wire Line
 Connection ~ 5300 3400
 Connection ~ 5750 3400
 $Comp
-L Device:R R2
+L vfd-ps:Device_R R2
 U 1 1 5BAA4918
 P 6950 2750
 F 0 "R2" H 7020 2796 50  0000 L CNN
 F 1 "16k" H 7020 2705 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 6880 2750 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 6880 2750 50  0001 C CNN
 F 3 "~" H 6950 2750 50  0001 C CNN
 	1    6950 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L vfd-ps:Device_R R6
 U 1 1 5BAA8D6B
 P 6950 3150
 F 0 "R6" H 7020 3196 50  0000 L CNN
 F 1 "1k" H 7020 3105 50  0000 L CNN
-F 2 "esynr3z_Resistor:R_0805" V 6880 3150 50  0001 C CNN
+F 2 "lib_fp:R_0805" V 6880 3150 50  0001 C CNN
 F 3 "~" H 6950 3150 50  0001 C CNN
 	1    6950 3150
 	1    0    0    -1  
@@ -641,24 +641,24 @@ Connection ~ 6150 3400
 Wire Wire Line
 	6450 2800 6450 3400
 $Comp
-L Device:C C7
+L vfd-ps:Device_C C7
 U 1 1 5BB70B8F
 P 7700 2750
 F 0 "C7" H 7815 2796 50  0000 L CNN
 F 1 "4.7u" H 7815 2705 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 7738 2600 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 7738 2600 50  0001 C CNN
 F 3 "~" H 7700 2750 50  0001 C CNN
 F 4 "50V X7R" H 7900 2600 50  0000 C CNN "Rating"
 	1    7700 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L vfd-ps:Device_C C6
 U 1 1 5BB70B96
 P 7300 2750
 F 0 "C6" H 7415 2796 50  0000 L CNN
 F 1 "4.7u" H 7415 2705 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 7338 2600 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 7338 2600 50  0001 C CNN
 F 3 "~" H 7300 2750 50  0001 C CNN
 F 4 "50V X7R" H 7350 2600 50  0000 L CNN "Rating"
 	1    7300 2750
@@ -679,7 +679,7 @@ Wire Wire Line
 	7700 2900 7700 3400
 Connection ~ 7300 3400
 $Comp
-L power:VEE #PWR?
+L vfd-ps:power_VEE #PWR?
 U 1 1 5BBC0E2D
 P 8450 3350
 AR Path="/5B82D2F4/5BBC0E2D" Ref="#PWR?"  Part="1" 
@@ -694,7 +694,7 @@ $EndComp
 Wire Wire Line
 	8450 3350 8450 3400
 $Comp
-L power:+5V #PWR01
+L vfd-ps:power_+5V #PWR01
 U 1 1 5BBC9955
 P 2900 2100
 F 0 "#PWR01" H 2900 1950 50  0001 C CNN
@@ -730,56 +730,56 @@ Wire Wire Line
 	3700 2600 3700 2650
 Connection ~ 3700 2600
 $Comp
-L esynr3z_DiodeSchottky:MBRA340 D1
+L vfd-ps:esynr3z_DiodeSchottky_MBRA340 D1
 U 1 1 5BA27196
 P 6450 2650
 F 0 "D1" V 6404 2729 50  0000 L CNN
 F 1 "MBRA340" V 6495 2729 50  0000 L CNN
-F 2 "esynr3z_Diode:SMA" H 6850 2900 50  0001 C CNN
+F 2 "lib_fp:SMA" H 6850 2900 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MBRA340T3-D.PDF" H 7650 3000 50  0001 C CNN
 	1    6450 2650
 	0    1    1    0   
 $EndComp
 $Comp
-L esynr3z_DiodeZener:BZX84C4V7 D2
+L vfd-ps:esynr3z_DiodeZener_BZX84C4V7 D2
 U 1 1 5BA2420F
 P 6500 4550
 F 0 "D2" H 6500 4334 50  0000 C CNN
 F 1 "BZX84C4V7" H 6500 4425 50  0000 C CNN
-F 2 "esynr3z_SOT:SOT-23" H 6500 4375 50  0001 C CNN
+F 2 "lib_fp:SOT-23" H 6500 4375 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BZX84C2V4LT1-D.PDF" H 7750 4750 50  0001 C CNN
 	1    6500 4550
 	-1   0    0    1   
 $EndComp
 $Comp
-L esynr3z_Misc:TestPoint TP1
+L vfd-ps:esynr3z_Misc_TestPoint TP1
 U 1 1 5BA2ABE7
 P 6100 2100
 F 0 "TP1" H 6050 2200 50  0000 L CNN
 F 1 "TestPoint" H 6153 2111 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6300 2100 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6300 2100 50  0001 C CNN
 F 3 "~" H 6300 2100 50  0001 C CNN
 	1    6100 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L esynr3z_Misc:TestPoint TP2
+L vfd-ps:esynr3z_Misc_TestPoint TP2
 U 1 1 5BA2B439
 P 5500 4000
 F 0 "TP2" H 5450 4100 50  0000 L CNN
 F 1 "TestPoint" H 5553 4011 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 4000 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 4000 50  0001 C CNN
 F 3 "~" H 5700 4000 50  0001 C CNN
 	1    5500 4000
 	1    0    0    -1  
 $EndComp
 $Comp
-L esynr3z_Misc:TestPoint TP3
+L vfd-ps:esynr3z_Misc_TestPoint TP3
 U 1 1 5BA30196
 P 5500 5050
 F 0 "TP3" H 5450 5200 50  0000 L CNN
 F 1 "TestPoint" H 5553 5061 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 5050 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 5050 50  0001 C CNN
 F 3 "~" H 5700 5050 50  0001 C CNN
 	1    5500 5050
 	-1   0    0    1   
@@ -792,12 +792,12 @@ Wire Wire Line
 Wire Wire Line
 	6100 2100 6100 2150
 $Comp
-L esynr3z_Misc:SolderJumper_2_Bridged JP1
+L vfd-ps:esynr3z_Misc_SolderJumper_2_Bridged JP1
 U 1 1 5BA69ED7
 P 6150 4550
 F 0 "JP1" H 6150 4663 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 6150 4664 50  0001 C CNN
-F 2 "esynr3z_Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4550 50  0001 C CNN
+F 2 "lib_fp:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 6150 4550 50  0001 C CNN
 F 3 "~" H 6150 4550 50  0001 C CNN
 	1    6150 4550
 	1    0    0    -1  
@@ -807,12 +807,12 @@ Wire Wire Line
 Wire Wire Line
 	5950 4550 5950 4500
 $Comp
-L Device:C C1
+L vfd-ps:Device_C C1
 U 1 1 5BA25E5D
 P 2900 2350
 F 0 "C1" H 3015 2396 50  0000 L CNN
 F 1 "22u" H 3015 2305 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 2938 2200 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 2938 2200 50  0001 C CNN
 F 3 "~" H 2900 2350 50  0001 C CNN
 F 4 "16V X5R" H 3100 2200 50  0000 C CNN "Rating"
 	1    2900 2350
@@ -830,12 +830,12 @@ Wire Wire Line
 	2900 2600 3300 2600
 Connection ~ 3300 2600
 $Comp
-L Device:C C8
+L vfd-ps:Device_C C8
 U 1 1 5BA4FDB0
 P 8100 2750
 F 0 "C8" H 8215 2796 50  0000 L CNN
 F 1 "4.7u" H 8215 2705 50  0000 L CNN
-F 2 "esynr3z_Capacitor:C_1210" H 8138 2600 50  0001 C CNN
+F 2 "lib_fp:C_1210" H 8138 2600 50  0001 C CNN
 F 3 "~" H 8100 2750 50  0001 C CNN
 F 4 "50V X7R" H 8300 2600 50  0000 C CNN "Rating"
 	1    8100 2750
@@ -881,34 +881,34 @@ Negative supply
 Text Notes 4450 3800 0    79   ~ 0
 Filament driver
 $Comp
-L Connector_Generic:Conn_01x04 J1
+L vfd-ps:Connector_Generic_Conn_01x04 J1
 U 1 1 5BA3AA64
 P 2950 3400
 F 0 "J1" H 2870 2975 50  0000 C CNN
 F 1 "Conn_01x04" H 2870 3066 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 2950 3400 50  0001 C CNN
+F 2 "lib_fp:PinHeader_1x04_P2.54mm_Vertical" H 2950 3400 50  0001 C CNN
 F 3 "~" H 2950 3400 50  0001 C CNN
 	1    2950 3400
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L vfd-ps:Connector_Generic_Conn_01x04 J2
 U 1 1 5BA3ACB7
 P 7650 4150
 F 0 "J2" H 7570 3725 50  0000 C CNN
 F 1 "Conn_01x04" H 7570 3816 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 7650 4150 50  0001 C CNN
+F 2 "lib_fp:PinHeader_1x04_P2.54mm_Vertical" H 7650 4150 50  0001 C CNN
 F 3 "~" H 7650 4150 50  0001 C CNN
 	1    7650 4150
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J3
+L vfd-ps:Connector_Generic_Conn_01x04 J3
 U 1 1 5BA40438
 P 7650 4900
 F 0 "J3" H 7570 4475 50  0000 C CNN
 F 1 "Conn_01x04" H 7570 4566 50  0000 C CNN
-F 2 "esynr3z_Connector:PinHeader_1x04_P2.54mm_Vertical" H 7650 4900 50  0001 C CNN
+F 2 "lib_fp:PinHeader_1x04_P2.54mm_Vertical" H 7650 4900 50  0001 C CNN
 F 3 "~" H 7650 4900 50  0001 C CNN
 	1    7650 4900
 	-1   0    0    1   
@@ -922,7 +922,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 4900 7900 4900
 $Comp
-L power:GND #PWR08
+L vfd-ps:power_GND #PWR08
 U 1 1 5BA4B596
 P 8050 4300
 F 0 "#PWR08" H 8050 4050 50  0001 C CNN
@@ -933,7 +933,7 @@ F 3 "" H 8050 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VEE #PWR07
+L vfd-ps:power_VEE #PWR07
 U 1 1 5BA4B59C
 P 8050 3900
 F 0 "#PWR07" H 8050 3750 50  0001 C CNN
@@ -952,7 +952,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 4150 8050 4250
 $Comp
-L power:+5V #PWR05
+L vfd-ps:power_+5V #PWR05
 U 1 1 5BA512C2
 P 3350 3150
 F 0 "#PWR05" H 3350 3000 50  0001 C CNN
@@ -963,7 +963,7 @@ F 3 "" H 3350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L vfd-ps:power_GND #PWR06
 U 1 1 5BA512C8
 P 3350 3550
 F 0 "#PWR06" H 3350 3300 50  0001 C CNN
@@ -1016,12 +1016,12 @@ Connection ~ 7900 4900
 Wire Wire Line
 	7900 4900 7850 4900
 $Comp
-L esynr3z_Misc:TestPoint TP4
+L vfd-ps:esynr3z_Misc_TestPoint TP4
 U 1 1 5BACC723
 P 5950 4000
 F 0 "TP4" H 5900 4100 50  0000 L CNN
 F 1 "TestPoint" H 6003 4011 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 4000 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 4000 50  0001 C CNN
 F 3 "~" H 6150 4000 50  0001 C CNN
 	1    5950 4000
 	1    0    0    -1  
@@ -1029,12 +1029,12 @@ $EndComp
 Wire Wire Line
 	5950 4000 5950 4050
 $Comp
-L esynr3z_Misc:TestPoint TP5
+L vfd-ps:esynr3z_Misc_TestPoint TP5
 U 1 1 5BAD95CE
 P 5950 5050
 F 0 "TP5" H 5900 5200 50  0000 L CNN
 F 1 "TestPoint" H 6003 5061 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 5050 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6150 5050 50  0001 C CNN
 F 3 "~" H 6150 5050 50  0001 C CNN
 	1    5950 5050
 	-1   0    0    1   
@@ -1044,12 +1044,12 @@ Wire Wire Line
 Wire Wire Line
 	5500 5000 5500 5050
 $Comp
-L esynr3z_Misc:TestPoint TP6
+L vfd-ps:esynr3z_Misc_TestPoint TP6
 U 1 1 5BA45EBE
 P 3500 3450
 F 0 "TP6" H 3450 3550 50  0000 L CNN
 F 1 "TestPoint" H 3553 3461 50  0001 L CNN
-F 2 "esynr3z_TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 3700 3450 50  0001 C CNN
+F 2 "lib_fp:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 3700 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
 	1    3500 3450
 	1    0    0    -1  
