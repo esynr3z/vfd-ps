@@ -21,5 +21,9 @@ Filament driver:
 Schematic and pcb layout created in KiCad 6 Nightly Build (compatible with KiCad 5).
 
 ![schematic](img/sch.png)
-![pcb top](img/pcb_top.jpg)
-![pcb bottom](img/pcb_bot.jpg)
+![pcb top](img/pcb_top.png)
+![pcb bottom](img/pcb_bot.png)
+
+## Notes
+
+* ```misc``` folder contains some calculation and simulation sheets for several IC to get negative voltages
