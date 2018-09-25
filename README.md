@@ -2,7 +2,7 @@
 
 ## Features
 
-Main parts of the VFD power supply: inverting buck-boost converter (supposed to use with ICs like PT6311 and etc) and filament driver.
+Main parts of the VFD power supply: inverting buck-boost converter on TPS54360 (supposed to use with ICs like PT6311 and etc) and filament driver on LM4871.
 
 Inverting converter:
 

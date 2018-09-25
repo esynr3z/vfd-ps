@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title "VFD power supply and filament driver")
-    (rev v1.0)
+    (rev A)
   )
 
   (layers
@@ -8021,7 +8021,7 @@
   (gr_line (start 132.207 79.883) (end 132.207 78.74) (layer F.SilkS) (width 0.15))
   (gr_line (start 137.287 78.74) (end 136.525 78.74) (layer F.SilkS) (width 0.15))
   (gr_line (start 137.287 79.883) (end 137.287 78.74) (layer F.SilkS) (width 0.15))
-  (gr_text "vfd-ps v1.0" (at 139.065 115.951) (layer F.SilkS)
+  (gr_text "vfd-ps rev.A" (at 139.065 115.951) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.4)))
   )
   (gr_text VF2 (at 163.951724 78.74) (layer F.SilkS)

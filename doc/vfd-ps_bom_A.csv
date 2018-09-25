@@ -1,0 +1,39 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Rating
+1,,Device_C,C10,1.8n,C_0805,1,~,
+2,,Device_C,C5,100n,C_0805,1,~,
+3,,Device_C,C14,10n,C_0805,1,~,
+4,,Device_C,C4 C15,1u,C_1206,2,~,50V X7R
+5,,Device_C,C9,220n,C_0805,1,~,
+6,,Device_C,C1 C2 C3 C12,22u,C_1210,4,~,16V X5R
+7,,Device_CP,C11 C13,22u,CP_Elec_6.3x7.7,2,~,50V
+8,,Device_C,C6 C7 C8,4.7u,C_1210,3,~,50V X7R
+9,,esynr3z_DiodeZener_BZX84C4V7,D2,BZX84C4V7,SOT-23,1,https://www.onsemi.com/pub/Collateral/BZX84C2V4LT1-D.PDF,
+10,,esynr3z_DiodeSchottky_MBRA340,D1,MBRA340,SMA,1,https://www.onsemi.com/pub/Collateral/MBRA340T3-D.PDF,
+11,,Connector_Generic_Conn_01x04,J1 J2 J3,Conn_01x04,PinHeader_1x04_P2.54mm_Vertical,3,~,
+12,,Device_L_Core_Iron,L1,33u,Sumida_CDRH127,1,~,
+13,,Device_R,R7 R11,100,R_0805,2,~,
+14,,Device_R,R8 R9 R12,10k,R_0805,3,~,
+15,,Device_R,R2,16k,R_0805,1,~,
+16,,Device_R,R6,1k,R_0805,1,~,
+17,,Device_R,R10,2.2k,R_0805,1,~,
+18,,Device_R,R4,220k,R_0805,1,~,
+19,,Device_R,R5,6.8k,R_0805,1,~,
+20,,Device_R_POT_TRIM,RV1,20k,Bourns_3362P,1,~,
+21,,Device_R_POT_TRIM,RV2 RV3,50,Bourns_3362P,2,~,
+22,,esynr3z_AmplifierAudio_LM4871,U2,LM4871,VSSOP-8_3.0x3.0mm_P0.65mm,1,http://www.ti.com/lit/ds/symlink/lm4871.pdf,
+23,,esynr3z_RegulatorSwitching_TPS54360DDA,U1,TPS54360DDA,TI_SO-PowerPAD-8_ThermalVias,1,www.ti.com/lit/ds/symlink/tps54360.pdf,
+
+
+
+
+
+Component Groups:,24
+Component Count:,38
+Fitted Components:,36
+Number of PCBs:,1
+Total components:,36
+Schematic Version:,A
+Schematic Date:,
+BoM Date:,Tue 25 Sep 2018 20:55:03 MSK
+Schematic Source:,/home/esynr3z/MyRepos/vfd-ps/vfd-ps.sch
+KiCad Version:,Eeschema 6.0.0-rc1-unknown-r13783-618182dc
