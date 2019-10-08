@@ -1,6 +1,6 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:vfd-ps-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -228,7 +228,7 @@ F 2 "lib_fp:CP_Elec_6.3x7.7" H 6238 3900 50  0001 C CNN
 F 3 "~" H 6200 4050 50  0001 C CNN
 F 4 "50V" V 6350 4050 50  0000 C CNN "Rating"
 	1    6200 4050
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L vfd-ps:Device_CP C13
@@ -240,7 +240,7 @@ F 2 "lib_fp:CP_Elec_6.3x7.7" H 6238 4850 50  0001 C CNN
 F 3 "~" H 6200 5000 50  0001 C CNN
 F 4 "50V" V 6350 5000 50  0000 C CNN "Rating"
 	1    6200 5000
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L vfd-ps:Device_R R7
