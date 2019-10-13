@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "VFD power supply and filament driver"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -78,7 +78,7 @@ U 1 1 5B88F7E5
 P 5050 5000
 F 0 "U2" H 4800 5450 50  0000 C CNN
 F 1 "LM4871" H 5250 5450 50  0000 C CNN
-F 2 "esynr3z_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6000 5600 50  0001 C CIN
+F 2 "esynr3z_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6000 5600 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm4871.pdf" H 6050 5700 50  0001 C CNN
 	1    5050 5000
 	1    0    0    -1  
